@@ -81,7 +81,8 @@
     border-top: none;
     border-bottom: none;
     border-radius: 13px/10px;
-  }
+  
+}
 
 .lens-base {
     position: absolute;
@@ -386,4 +387,16 @@
     left: 0px;
     border-radius: 30%;
     background: rgba(255, 255, 255, 0.5);
+}
+
+.lens-shadow {
+    position: absolute;
+    display: block;
+    height: 200px;
+    width: 87px;
+    top: 135px;
+    left: 137px;
+    background: #f5de82;
+    mix-blend-mode: multiply;
+    transform: rotate(-27deg);
 }
