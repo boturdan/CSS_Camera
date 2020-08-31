@@ -1,0 +1,389 @@
+.canvas {
+    position: absolute;
+    display: block;
+    top: 50px;
+    left: 50px;
+    width: 256px;
+    height: 256px;
+    border-radius: 50%;
+    background: #fed73a;
+    overflow: hidden;
+}
+
+.camera-shadow {
+    position: absolute;
+    display: block;
+    height: 200px;
+    width: 179px;
+    top: 125px;
+    left: 83px;
+    background: #cfaf2c;
+    transform: rotate(-27deg);
+}
+
+.viewfinder-shadow {
+    position: absolute;
+    display: block;
+    height: 30px;
+    width: 20px;
+    top: 70px;
+    left: 163px;
+    background: #cfaf2c;
+    transform: rotate(-27deg);
+}
+
+.camera {
+    position: relative;
+    display: block;
+    top: -15px;
+}
+
+.camera-body-top {
+    position: absolute;
+    width: 160px;
+    height: 100px;
+    top: 100px;
+    left: 47px;
+    border-radius: 10%;
+    background: #32485b;
+}
+
+.camera-body-bottom {
+    position: absolute;
+    width: 160px;
+    height: 70px;
+    top: 130px;
+    left: 47px;
+    border-radius: 5%;
+    border-bottom-left-radius: 13%;
+    border-bottom-right-radius: 13%;
+    background: #936d58;
+}
+
+.camera-body-decor {
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    top: 140px;
+    left: 52px;
+    border-radius: 5%;
+    background: #da8c54;
+}
+
+.camera-body-sides {
+    position: absolute;
+    width: 140px;
+    height: 100px;
+    top: 100px;
+    left: 47px;
+    border: 10px solid lightpink;
+    mix-blend-mode: multiply;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 13px/10px;
+  }
+
+.lens-base {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    top: 110px;
+    left: 95px;
+    border-radius: 50%;
+    background: #22363d;
+    border: 7px solid #936d58;
+}
+
+.lens {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    top: 7px;
+    left: 7px;
+    border-radius: 50%;
+    background: #4e7386;
+    border: 3px solid #588499;
+}
+
+.lens-iris {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 24px;
+    left: 24px;
+    border-radius: 50%;
+    background: #082831;
+    border: 3px solid #214755;
+}
+
+.lens-flare {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 13px;
+    left: 20px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.lens-arc-flare {
+    position: absolute;
+    display: block;
+    top: 9px;
+    left: 10px;
+    width: 55px;
+    height: 55px;
+    z-index: 1;
+    border-radius: 50%;
+    box-shadow: 1px 3px 1px 1px white;
+}
+
+.viewfinder-base {
+    position: absolute;
+    width: 61px;
+    height: 30px;
+    top: 79px;
+    left: 116px;
+    z-index: 0;
+    border-radius: 20%;
+    background: #32485b;
+}
+
+.viewfinder {
+    position: absolute;
+    width: 25px;
+    height: 15px;
+    top: 4px;
+    left: 7px;
+    z-index: 1;
+    border-radius: 20%;
+    border: 2px solid #4e7386;
+    background: #588499;
+}
+
+.view-inside {
+    position: absolute;
+    width: 12px;
+    height: 8px;
+    top: 3px;
+    left: 9px;
+    border-radius: 40%;
+    background: #c1c1c1;
+}
+
+.reddot {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    top: 17px;
+    left: 42px;
+    border-radius: 50%;
+    background: #ff0800;
+}
+
+.lightmeter {
+    position: absolute;
+    width: 14px;
+    height: 10px;
+    top: 5px;
+    left: 41px;
+    border-radius: 30%;
+    background: #082831;
+}
+
+.lightmeter-flare {
+    position: absolute;
+    width: 3px;
+    height: 2px;
+    top: 2px;
+    left: 3px;
+    border-radius: 40%;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.viewfinder-flare {
+    position: absolute;
+    width: 5px;
+    height: 3px;
+    top: 1px;
+    left: 2px;
+    border-radius: 40%;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.lens-release {
+    position: absolute;
+    width: 12px;
+    height: 6px;
+    top: 169px;
+    left: 169px;
+    z-index: 1;
+    border-radius: 12px 12px 0 0;
+    transform: rotate(120deg);
+    background: #22363d;
+    border: 3px solid #936d58;
+}
+
+.self-timer-base {
+    position: absolute;
+    width: 20px;
+    height: 0;
+    top: 148px;
+    left: 68px;
+    border-bottom: 10px solid transparent;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+    border-top: 40px solid #22363d;
+    transform: scale(0.3) rotate(-45deg);
+}
+
+.self-timer-wheel-big {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -80px;
+    left: -18px;
+    border-radius: 50%;
+    border: 2px solid #c1c1c1;
+    background: #555;
+}
+
+.self-timer-wheel-small {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: -9px;
+    left: -6px;
+    border: 1px solid #555;
+    border-radius: 50%;
+    background: #c1c1c1;
+}
+
+.self-timer-wheel-line {
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    top: -55px;
+    left: -17px;
+    background: #c1c1c1;
+    transform: rotate(20deg);
+}
+
+.shutter {
+    position: absolute;
+    width: 24px;
+    height: 3px;
+    top: 97px;
+    left: 67px;
+    border-radius: 40%;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+    background: #588499;
+}
+
+.shutter-button {
+    position: absolute;
+    width: 17px;
+    height: 4px;
+    top: -3px;
+    left: 3px;
+    border-radius: 50%;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+    background: #214755;
+}
+
+.shutter-reflection {
+    position: absolute;
+    width: 7px;
+    height: 2px;
+    top: 1px;
+    left: 4px;
+    border-radius: 40%;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.shutter-button-reflection {
+    position: absolute;
+    width: 7px;
+    height: 2px;
+    top: -2px;
+    left: 5px;
+    border-radius: 40%;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.flash {
+    position: absolute;
+    width: 39px;
+    height: 22px;
+    top: 104px;
+    left: 61px;
+    border-radius: 10%;
+    background: #c1c1c1;
+}
+
+.flash-line-1 {
+    position: absolute;
+    width: 35px;
+    height: 1px;
+    top: 2px;
+    left: 2px;
+    background: #ececec;
+}
+
+.flash-line-2 {
+    position: absolute;
+    width: 35px;
+    height: 1px;
+    top: 6px;
+    left: 2px;
+    background: #ececec;
+}
+
+.flash-line-3 {
+    position: absolute;
+    width: 35px;
+    height: 1px;
+    top: 10px;
+    left: 2px;
+    background: #ececec;
+}
+
+.flash-line-4 {
+    position: absolute;
+    width: 35px;
+    height: 1px;
+    top: 14px;
+    left: 2px;
+    background: #ececec;
+}
+
+.flash-line-5 {
+    position: absolute;
+    width: 35px;
+    height: 1px;
+    top: 18px;
+    left: 2px;
+    background: #ececec;
+}
+
+.flash-flare-vertical {
+    position: absolute;
+    width: 3px;
+    height: 15px;
+    top: 0px;
+    left: 0px;
+    border-radius: 30%;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.flash-flare-horizontal {
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    top: 0px;
+    left: 0px;
+    border-radius: 30%;
+    background: rgba(255, 255, 255, 0.5);
+}
